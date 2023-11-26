@@ -1,13 +1,10 @@
-# voice_translation_web_app
-its a web based online real time video call voice translation  
-
 # Voice Translation Web Application
 
 ## Overview
 
-This web application enables real-time voice translation during video calls. Users can communicate in different languages, and the application translates spoken words between participants.
+Welcome to the Voice Translation Web Application! This project enables real-time voice translation during video calls, allowing users to communicate in different languages seamlessly.
 
-The project consists of a Django backend providing API services and a React frontend for the user interface. It utilizes Vite for fast development and efficient builds.
+The project consists of a Django backend providing API services and a React frontend for the user interface. The backend and frontend are organized into clear directories, and the project utilizes Vite for fast development and efficient builds.
 
 ## Features
 
@@ -24,7 +21,20 @@ voice_translation_web_app/
 │
 ├── backend/
 │   ├── voice_translation_api/
-│   │   ├── ...
+│   │   ├── asgi.py
+│   │   ├── settings.py
+│   │   ├── urls.py
+│   │   ├── wsgi.py
+│   │   ├── migrations/
+│   │   ├── translation/
+│   │   │   ├── __init__.py
+│   │   │   ├── admin.py
+│   │   │   ├── apps.py
+│   │   │   ├── models.py
+│   │   │   ├── tests.py
+│   │   │   └── views.py
+│   │   ├── manage.py
+│   │   └── requirements.txt
 │   │
 │   └── ...
 │
@@ -32,11 +42,16 @@ voice_translation_web_app/
 │   ├── public/
 │   ├── src/
 │   │   ├── components/
-│   │   │   ├── ...
+│   │   │   ├── Home.jsx
+│   │   │   ├── VideoCall.jsx
+│   │   │   └── ...
 │   │   ├── pages/
-│   │   │   ├── ...
+│   │   │   ├── Login.jsx
+│   │   │   ├── Dashboard.jsx
+│   │   │   └── ...
 │   │   ├── services/
-│   │   │   ├── ...
+│   │   │   ├── ApiService.js
+│   │   │   └── WebSocketService.js
 │   │   ├── App.jsx
 │   │   └── main.js
 │   │
